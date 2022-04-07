@@ -2,6 +2,7 @@
 Here is a basic set of rules for writing code that we use and is consistent within our company. This way, when we read others code, we don’t have to first translate it from their way or writing code to our way and only after that start understand what the in the world they tried to achieve there. Basically, it makes life easier, don’t you like it when it’s easy ? We will mostly use C# standards since we use C# in Unity ( don’t use JavaScript/UnityScript, please ^_^ ). This means we will almost never use hyphens ( – ) or underscores ( _ ).
 
 **Namespaces are all PascalCase**
+
 Bad :
 ```csharp
 avangarde.currentgame.ui.mainmenu
