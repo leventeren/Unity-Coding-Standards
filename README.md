@@ -198,13 +198,17 @@ Bad :
 ```csharp
 for(int i=0; i<10; i++)
     ExecuteSomething();
+```
+
 Good :
 
+```csharp
 for(int i=0; i<10; i++)
 {
     ExecuteSomething();
 }
 ```
+
 **Public fields**
 
 Generally, when people discuss about OOP (Object Oriented Programming) principles, public fields are not something recommended.
@@ -212,6 +216,7 @@ Generally, when people discuss about OOP (Object Oriented Programming) principle
 ```csharp
 public int publicVariable;
 ```
+
 These can create a lot of problems due to their access level. Since code from outside of the class can access this, you can easily make the mistake of modifying certain parts from who knows where and then it will be hard to debug if a problem arises. On the other hand, Unity team recommends using public fields in their documentation since they are automatically serialized and displayed in the inspector. This is more of a preference, as long as you are careful when writing code, the fact that some fields are public shouldn’t be a problem. The proper OOP way of doing this would be to make everything private. If you need something to be accessed from another class, make a property with a get and a set method.
 
 ```csharp
