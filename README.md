@@ -12,6 +12,7 @@ Good :
 Avangarde.CurrentGame.UI.MainMenu
 ```
 **Classes & Methods are all PascalCase**
+
 Bad  :
 ```csharp
 public class myclass 
@@ -30,6 +31,7 @@ public class MyClass
 (including public fields as per Unity convention, we’ll talk more about these later in the post)
 
 **Static Fields should be PascalCase**
+
 Bad :
 ```csharp
 public static int _someStaticValue = 10;
@@ -39,6 +41,7 @@ Good :
 public static int SomeStaticValue = 10;
 ```
 **Properties are PascalCase**
+
 Bad :
 ```csharp
 private string _name;
@@ -70,6 +73,7 @@ public string Name
 }
 ```
 **Parameters should be camelCase**
+
 Bad :
 ```csharp
 public void HighlightElement(bool SomeCondition)
@@ -94,6 +98,7 @@ public UnityAction OnDeath;
 
 **Declarations**
 Always use access level modifiers. Do not omit them. If you don’t write any access modifier, the compiler will assume it’s private, but that doesn’t mean you shouldn’t write the keyword private.
+
 Bad :
 ```csharp
 int privateVariable;
@@ -106,6 +111,7 @@ Remember that we talked about consistency? Well, when everything that needs to b
  
 
 **Use single declaration per line. It helps with keeping everything clear.**
+
 Bad :
 ```csharp
 private int firstVariable, secondVariable;
@@ -119,6 +125,7 @@ private int secondVariable;
 
 Declare only one class / interface per source file, with the exception of internal classes. You may end up with more files, but it’s clear and you can easily find what you are searching for.
 Preface interfaces with an I 
+
 Bad :
 ```csharp
 PointerDown
@@ -199,6 +206,7 @@ for(int i=0; i<10; i++)
 }
 ```
 **Public fields**
+
 Generally, when people discuss about OOP (Object Oriented Programming) principles, public fields are not something recommended.
 
 ```csharp
